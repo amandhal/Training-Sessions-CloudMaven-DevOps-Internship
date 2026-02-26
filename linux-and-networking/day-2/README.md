@@ -16,13 +16,13 @@
 ### Tested login
 <img width="1098" height="583" alt="test-login" src="https://github.com/user-attachments/assets/6c0dc59e-2f6a-4ae5-838a-6af9bfab28c4" />
 
-# Lab 2 – Cron Job
+## Lab 2 – Cron Job
 
 
 ### Created a cron job to rotate the log file
 <img width="1099" height="567" alt="create-cron-job" src="https://github.com/user-attachments/assets/a8dd8be6-e1ce-4626-927b-333e5b186d39" />
 
-# Lab 3 – systemd Timer
+## Lab 3 – systemd Timer
 
 
 ### Created a simple script
@@ -35,7 +35,7 @@
 <img width="1182" height="408" alt="enable-and-verify" src="https://github.com/user-attachments/assets/80866a2f-54f5-4919-a008-0ee1c76b8cdd" />
 
 
-# Homework - Task
+## Homework - Task
 
 
 ### Archived log files to /var/backups/ using a bash one-liner
