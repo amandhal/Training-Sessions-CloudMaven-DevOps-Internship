@@ -17,7 +17,7 @@
 ### Inspected Last 20 SSH logs
 <img width="1919" height="734" alt="task-4-last-20-ssh-logs" src="https://github.com/user-attachments/assets/db755519-431f-4ce9-bb02-bb9b955596ea" />
 
-### Scheduled Script Using systemd Timer and 
+### Scheduled Script Using systemd Timer 
 <img width="964" height="500" alt="disk-monitoring-script" src="https://github.com/user-attachments/assets/7775abdf-5b1a-4fee-90ac-2b0e5e97d6a4" />
 <img width="1005" height="681" alt="disk-check-timer-and-service" src="https://github.com/user-attachments/assets/53f00bfe-3215-49b9-b646-020b79036994" />
 <img width="1577" height="377" alt="started-and-enable-disk-check-timer" src="https://github.com/user-attachments/assets/1b76689d-c0d7-41b5-8638-9b1326ccc7eb" />
