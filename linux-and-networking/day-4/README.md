@@ -1,4 +1,4 @@
-<img width="899" height="666" alt="task-1-countargs-script" src="https://github.com/user-attachments/assets/ce5fae2f-4220-4447-9854-d8ed261a956f" /># Day 4 - Monitoring, Packet Capture, Security Basics & Bash Scripting - Hands-On Labs
+# Day 4 - Monitoring, Packet Capture, Security Basics & Bash Scripting - Hands-On Labs
 
 ## Lab 1 — Created Disk Monitoring Script
 <img width="964" height="500" alt="lab-1-disk-monitoring-script" src="https://github.com/user-attachments/assets/446aac2f-485a-45af-9948-dc7e75f66ccc" />
