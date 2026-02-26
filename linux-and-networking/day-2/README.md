@@ -1,4 +1,7 @@
-# Lab 1 – SSH Key Setup
+# Day 2 - SSH, Package Management, Scheduling & systemd - Hands-on Lab
+
+
+## Lab 1 – SSH Key Setup
 
 
 ### Generated SSH keys
