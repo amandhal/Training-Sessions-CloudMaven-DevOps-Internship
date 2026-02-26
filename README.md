@@ -1,4 +1,7 @@
-# Week 1-Linux & Networking
+# DevOps Internship - CloudMaven
+
+
+## Week 1 - Linux & Networking
 
 
 ### Day 1 - Linux Fundamentals (CLI, Filesystem, Users, Processes)
