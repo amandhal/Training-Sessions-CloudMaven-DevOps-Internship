@@ -8,3 +8,4 @@
 ##### Day 1 - Linux Fundamentals (CLI, Filesystem, Users, Processes)
 ##### Day 2 - SSH, Package Management, Scheduling & systemd
 ##### Day 3 - Networking Fundamentals & Troubleshooting
+##### Day 4 - Monitoring, Packet Capture, Security Basics & Bash Scripting
