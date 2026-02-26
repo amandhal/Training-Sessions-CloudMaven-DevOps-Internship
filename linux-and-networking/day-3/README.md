@@ -1,3 +1,6 @@
+# Day 3 - Networking Fundamentals & Troubleshooting - Hands-On Lab
+
+
 ## Task 1 — Verified System’s Network Identity using ip addr and ip route 
 <img width="1000" height="754" alt="verify-system-network-identity" src="https://github.com/user-attachments/assets/ef90a091-3d36-4fd3-938e-d7d494e56f26" />
 
