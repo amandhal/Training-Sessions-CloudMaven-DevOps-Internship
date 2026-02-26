@@ -22,7 +22,7 @@
 # Lab 3 – systemd Timer
 
 
-### Create a simple script
+### Created a simple script
 <img width="1133" height="357" alt="create-script" src="https://github.com/user-attachments/assets/918e7e01-f43b-450e-9ba7-34bf4ab05f98" />
 
 ### Created service and timer file
@@ -33,9 +33,8 @@
 
 
 # Homework - Task
-<img width="1127" height="313" alt="bash-one-liner" src="https://github.com/user-attachments/assets/a9b537d4-8ed2-45f9-8c51-ed1ae08d8f69" />
 
 
 ### Archived log files to /var/backups/ using a bash one-liner
-<img width="1577" height="351" alt="create-a-local-domain-using-etc-hosts" src="https://github.com/user-attachments/assets/4f7ec6dd-ef73-4f1c-8d29-cc8ce208aedb" />
+<img width="1127" height="313" alt="bash-one-liner" src="https://github.com/user-attachments/assets/a9b537d4-8ed2-45f9-8c51-ed1ae08d8f69" />
 
