@@ -8,17 +8,14 @@
 
 ## Homework / Deliverables
 
-### Created a bash script
+### Created and executed a bash script
 <img width="899" height="666" alt="task-1-countargs-script" src="https://github.com/user-attachments/assets/da5b245e-2a36-43ca-ab28-c3ff5906ccc1" />
 
-### Checked process that uses most memory + Checked Largest directory in /var/log
+### Checked the process that uses most memory + Checked Largest directory in /var/log
 <img width="1249" height="221" alt="task-2-and-3" src="https://github.com/user-attachments/assets/51ed23ad-bb9b-40e6-aaa8-e6375230249c" />
 
 ### Inspected Last 20 SSH logs
 <img width="1919" height="734" alt="task-4-last-20-ssh-logs" src="https://github.com/user-attachments/assets/db755519-431f-4ce9-bb02-bb9b955596ea" />
-
-### Scheduled Script via Cron
-<img width="902" height="228" alt="task-5-schedule-script-via-cron" src="https://github.com/user-attachments/assets/cc634829-e00a-4df7-91b6-c67cd14567db" />
 
 ### Scheduled Script Using systemd Timer and 
 <img width="964" height="500" alt="disk-monitoring-script" src="https://github.com/user-attachments/assets/7775abdf-5b1a-4fee-90ac-2b0e5e97d6a4" />
