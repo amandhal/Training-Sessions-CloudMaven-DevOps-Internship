@@ -1,6 +1,5 @@
 ## Task 1 — Verified System’s Network Identity using ip addr and ip route 
-<img width="1000" height="754" alt="verify-system-network-identity" src="https://github.com/user-attachments/assets/29f43fdc-e18d-4b21-b351-db348a25d4e2" />
-
+<img width="1000" height="754" alt="verify-system-network-identity" src="https://github.com/user-attachments/assets/ef90a091-3d36-4fd3-938e-d7d494e56f26" />
 
 ## Task 2 — Tested Internet Connectivity Flow using Ping and Traceroute
 <img width="1275" height="697" alt="ping-by-ip-and-domain" src="https://github.com/user-attachments/assets/652ae0b8-02de-4b19-8229-fc6b86f5465a" />
