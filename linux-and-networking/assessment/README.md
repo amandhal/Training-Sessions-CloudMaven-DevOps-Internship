@@ -2,7 +2,7 @@
 
 ## 1. Permissions & umask (Practical):
 
-### Create a file named test.txt with default permissions. Default file permission for a new file before umask are 666. Since umask is 002, effective default file permissions for a new file becomes 664.
+### Created a file named test.txt with default permissions. Default file permission for a new file before umask are 666. Since umask is 002, effective default file permissions for a new file become 664.
 <img width="805" height="194" alt="image" src="https://github.com/user-attachments/assets/1c2c4bd0-d2d8-4e47-b4cb-e218d1930d03" />
 
 ## 2. Users (Practical):
@@ -77,10 +77,9 @@
 ## Bonus:
 
 ### Cron vs systemd timers
-##### Cron is used for simple task scheduling while systemd better integration, logging and dependency handling is required.
+#### Cron is used for simple task scheduling while systemd is used when better integration, logging and dependency handling is required.
 
 ### stdout vs stderr
-
 #### stdout (file descriptor 1) is normal program output whereas stderr (file descriptor 2) is used for error messages.
 
 #### Redirection Example 1 - In this example only stdout is redirected, only stdout goes inside out.txt as > is used.
