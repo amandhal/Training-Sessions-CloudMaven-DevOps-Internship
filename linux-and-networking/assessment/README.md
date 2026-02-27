@@ -76,10 +76,10 @@
 
 ## Bonus:
 
-### Cron vs systemd timers
+### Cron vs systemd timers comparison
 #### Cron is used for simple task scheduling while systemd is used when better integration, logging and dependency handling is required.
 
-### stdout vs stderr
+### stdout vs stderr comparison
 #### stdout (file descriptor 1) is normal program output whereas stderr (file descriptor 2) is used for error messages.
 
 #### Redirection Example 1 - In this example only stdout is redirected, only stdout goes inside out.txt as > is used.
@@ -87,7 +87,3 @@
 
 #### Redirection Example 2 - In this example only stderr is redirected, only stderr goes inside err.txt as 2> is used.
 <img width="1044" height="137" alt="image" src="https://github.com/user-attachments/assets/d79c1f60-a536-43b9-8225-3a6bf9f4137b" />
-
-
-
-
