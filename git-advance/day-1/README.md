@@ -1,4 +1,4 @@
-# Day 1 - Git Basics - Hands-On Lab
+## Day 1 - Git Basics - Hands-On Lab
 
 #### Task 1 - Install Git
 <img width="530" height="101" alt="image" src="https://github.com/user-attachments/assets/85b89e6c-b91d-4288-b08d-05c91480983b" />
