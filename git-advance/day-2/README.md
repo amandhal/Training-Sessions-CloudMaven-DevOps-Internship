@@ -36,4 +36,5 @@
 <img width="824" height="141" alt="image" src="https://github.com/user-attachments/assets/927cd977-3d2d-4d70-b421-981a63695f22" />
 
 #### Complete merge & Push updated branch
-<img width="1012" height="675" alt="image" src="https://github.com/user-attachments/assets/a0137728-0655-4bd6-b2b3-c55d469cb637" />
+<img width="1003" height="420" alt="image" src="https://github.com/user-attachments/assets/9f3b1a1d-d252-4775-b5c2-7e259e4e29c3" />
+<img width="1126" height="358" alt="image" src="https://github.com/user-attachments/assets/ef15b5f4-08f8-4b71-900a-cf8725f67074" />
