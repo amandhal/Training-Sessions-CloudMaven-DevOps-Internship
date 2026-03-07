@@ -1,11 +1,11 @@
 # Day 1 - Web Servers - Nginx Hands-On Tasks
 
-### T1 - NGINX Installation & management commands
+## T1 - NGINX Installation & management commands
 
--   Install NGINX and confirm the welcome page loads at http://localhost
+### Install NGINX and confirm the welcome page loads at http://localhost
 <img width="615" height="445" alt="image" src="https://github.com/user-attachments/assets/5b028d6c-ad71-449f-b64b-f69cb0fb300d" />
 
--   Management commands + Intentional misconfig
+### Management commands + Intentional misconfig
 
 #### Stop nginx.service
 <img width="1911" height="813" alt="image" src="https://github.com/user-attachments/assets/736894d4-b4fb-4527-b8ff-fa553f908323" />
@@ -47,7 +47,7 @@
 ### Add mysite.local to /etc/hosts and verify all 3 pages load via http://mysite.local/about.html etc. + Test what happens when accessing a non-existent page — confirm NGINX returns a 404
 <img width="1917" height="780" alt="image" src="https://github.com/user-attachments/assets/b882e4a3-878f-4898-962f-0a943b620994" />
 
-## T4 Reverse Proxy & Docker
+## T4 - Reverse Proxy & Docker
 
 ### Run two Docker containers: nginx:alpine on port 8081 and traefik/whoami on port 8082
 <img width="1442" height="389" alt="image" src="https://github.com/user-attachments/assets/678fc038-89fa-4210-9762-4333e00e3a9b" />
@@ -60,7 +60,7 @@
 <img width="918" height="653" alt="image" src="https://github.com/user-attachments/assets/fafd5e78-d82f-487a-a31a-beae0ce1d65f" />
 <img width="666" height="375" alt="image" src="https://github.com/user-attachments/assets/2702127a-a3e2-478e-a14c-418cda530b30" />
 
-## T5 Host app1.local and app2.local with unique content and verify isolation
+## T5 - Host app1.local and app2.local with unique content and verify isolation
 
 ### Create directories, configs, and /etc/hosts entries for app1.local and app2.local + Add a unique HTML page to each site to visually and confirm that the requests are hitting the right backend.
 
