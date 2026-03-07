@@ -1,4 +1,4 @@
-# Nginx Web Server Tasks
+# Day 1 - Web Servers - Nginx Hands-On Tasks
 
 ## T1 - NGINX Installation & management commands
 
