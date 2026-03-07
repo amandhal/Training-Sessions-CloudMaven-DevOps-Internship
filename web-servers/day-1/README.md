@@ -1,6 +1,6 @@
 # Day 1 - Web Servers - Nginx Hands-On Tasks
 
-## T1 - NGINX Installation & management commands
+### T1 - NGINX Installation & management commands
 
 -   Install NGINX and confirm the welcome page loads at http://localhost
 <img width="615" height="445" alt="image" src="https://github.com/user-attachments/assets/5b028d6c-ad71-449f-b64b-f69cb0fb300d" />
