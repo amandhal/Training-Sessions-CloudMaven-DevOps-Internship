@@ -36,30 +36,46 @@
 <img width="1029" height="243" alt="image" src="https://github.com/user-attachments/assets/900a549a-2f70-4923-95cc-b8779972e2de" />
 
 ## T3 - Host a multi-page static website
+
+### Create a site under /var/www/mysite.local with least 3 pages: index.html, about.html, contact.html + Write a proper server block config and enable it
+
 <img width="1199" height="540" alt="image" src="https://github.com/user-attachments/assets/da4bd181-4674-451f-9ef9-98e5ba7ff2d0" />
 <img width="1231" height="246" alt="image" src="https://github.com/user-attachments/assets/0f322016-65d5-4d4a-900b-f09b5722b3d1" />
+
+### Add mysite.local to /etc/hosts and verify all 3 pages load via http://mysite.local/about.html etc. + Test what happens when accessing a non-existent page — confirm NGINX returns a 404
 <img width="1917" height="780" alt="image" src="https://github.com/user-attachments/assets/b882e4a3-878f-4898-962f-0a943b620994" />
 
-## T4
-<img width="867" height="559" alt="image" src="https://github.com/user-attachments/assets/217fd167-17b6-4967-b731-8cd6906dc2e3" />
+## T4 Reverse Proxy & Docker
 
+### Run two Docker containers: nginx:alpine on port 8081 and traefik/whoami on port 8082
 <img width="1442" height="389" alt="image" src="https://github.com/user-attachments/assets/678fc038-89fa-4210-9762-4333e00e3a9b" />
 
-<img width="918" height="653" alt="image" src="https://github.com/user-attachments/assets/fafd5e78-d82f-487a-a31a-beae0ce1d65f" />
+### Configure Nginx with two location blocks: /app1 proxying to :8081 and /app2 proxying to :8082
+<img width="867" height="559" alt="image" src="https://github.com/user-attachments/assets/217fd167-17b6-4967-b731-8cd6906dc2e3" />
 
+### Verify both paths return distinct responses at http://myapp.local/app1 and http://myapp.local/app2 + Confirm the X-Real-IP header is set correctly using the whoami endpoint
+
+<img width="918" height="653" alt="image" src="https://github.com/user-attachments/assets/fafd5e78-d82f-487a-a31a-beae0ce1d65f" />
 <img width="666" height="375" alt="image" src="https://github.com/user-attachments/assets/2702127a-a3e2-478e-a14c-418cda530b30" />
 
-## T5
+## T5 Host app1.local and app2.local with unique content and verify isolation
+
+### Create directories, configs, and /etc/hosts entries for app1.local and app2.local + Add a unique HTML page to each site to visually and confirm that the requests are hitting the right backend.
+
 <img width="1300" height="820" alt="image" src="https://github.com/user-attachments/assets/57738a23-52e0-4f4e-bbdc-f245de0801c1" />
+
+### Confirm using curl that request are hitting right backend + Disable app2.local (remove its symlink) and confirm http://app2.local returns a 404 or connection error while app1.local still works and then Re-enable app2.local and reload NGINX.
 
 <img width="1202" height="711" alt="image" src="https://github.com/user-attachments/assets/78b07653-9b4c-45db-b5e7-4e5ba8a5758a" />
 
-## T6
+## T6 - Diagnose and fix three common NGINX errors - Troubleshooting
+
+### Cause a 403 Forbidden: set a file to chmod 600 and try to access it, observe error log file — then fix it.
 <img width="1919" height="529" alt="image" src="https://github.com/user-attachments/assets/d687c4f0-0011-44b2-8e6b-b30fb578e034" />
 
+### Cause a 502 Bad Gateway: set proxy_pass to a port with no container running — observe and fix it.
 <img width="1919" height="751" alt="image" src="https://github.com/user-attachments/assets/1dd7f2a5-3283-4cc2-afb9-4d081995e904" />
-
 <img width="1094" height="608" alt="image" src="https://github.com/user-attachments/assets/ea743d4a-2abb-46dd-b663-5be167d7d01b" />
 
+### Cause a config error: remove a closing brace from a server block — run nginx -t to catch it, then fix it.
 <img width="1489" height="238" alt="image" src="https://github.com/user-attachments/assets/5f9931b7-7783-4f42-adee-1329579b1076" />
-
