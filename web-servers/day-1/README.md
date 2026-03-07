@@ -1,11 +1,11 @@
 # Day 1 - Web Servers - Nginx Hands-On Tasks
 
-## T1 - NGINX Installation & management commands
+#### T1 - NGINX Installation & management commands
 
-### Install NGINX and confirm the welcome page loads at http://localhost
+-   Install NGINX and confirm the welcome page loads at http://localhost
 <img width="615" height="445" alt="image" src="https://github.com/user-attachments/assets/5b028d6c-ad71-449f-b64b-f69cb0fb300d" />
 
-### Management commands + Intentional misconfig
+-   Management commands + Intentional misconfig
 
 #### Stop nginx.service
 <img width="1911" height="813" alt="image" src="https://github.com/user-attachments/assets/736894d4-b4fb-4527-b8ff-fa553f908323" />
