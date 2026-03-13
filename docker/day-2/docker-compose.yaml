@@ -1,0 +1,36 @@
+services:
+  backend:
+    build: ./mern/backend
+    ports:
+      - "5050:5050" 
+    networks:
+      - mern_network
+    environment:
+      MONGO_URI: mongodb://mongodb:27017/mydatabase  
+    depends_on:
+      - mongodb
+
+  frontend:
+    build: ./mern/frontend
+    ports:
+      - "8080:80"  
+    networks:
+      - mern_network
+
+  mongodb:
+    image: mongo 
+    ports:
+      - "27017:27017"  
+    networks:
+      - mern_network
+    volumes:
+      - mongo-data:/data/db  
+
+networks:
+  mern_network:
+    driver: bridge 
+
+volumes:
+  mongo-data:
+    driver: local  # Persist MongoDB data locally
+
