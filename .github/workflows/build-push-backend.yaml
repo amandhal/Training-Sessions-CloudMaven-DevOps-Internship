@@ -6,7 +6,7 @@ on:
       - docker/day-2
     paths:
       - "docker/day-2/backend/**"
-      - ".github/workflows/*"
+      - ".github/workflows/build-push-backend.yaml"
 
 jobs:
   build-push-backend:
