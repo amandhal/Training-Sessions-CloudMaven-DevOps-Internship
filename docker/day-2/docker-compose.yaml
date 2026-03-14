@@ -1,0 +1,37 @@
+services:
+  frontend:
+    image: amandhal/frontend:1.0
+    ports:
+      - "80:80"  
+    networks:
+      - mern_network
+    depends_on:
+      - backend
+      
+  backend:
+    image: amandhal/backend:1.0
+    ports:
+      - "5050:5050" 
+    networks:
+      - mern_network
+    environment:
+      MONGO_URI: mongodb://mongodb:27017/mern_db  
+    depends_on:
+      - mongodb
+
+  mongodb:
+    image: mongo:7.0-jammy 
+    ports:
+      - "27017:27017"  
+    networks:
+      - mern_network
+    volumes:
+      - mongo-data:/data/db
+
+networks:
+  mern_network:
+    driver: bridge 
+
+volumes:
+  mongo-data:
+    driver: local
