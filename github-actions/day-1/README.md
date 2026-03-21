@@ -9,7 +9,7 @@ concepts, explored through GitHub Actions.
 
 - [Task 1: Risks of Manual Deployment](#task-1-risks-of-manual-deployment)
 - [Task 2: GitHub Actions Exploration](#task-2-github-actions-exploration)
-- [Task 3: CI/CD Pipeline Flow](#task-3-cicd-pipeline-flow)
+- [Task 3: CI/CD Pipeline Flow](#task-3-correct-cicd-pipeline-flow)
 
 ---
 
