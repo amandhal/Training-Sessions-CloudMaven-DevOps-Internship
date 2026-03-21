@@ -7,7 +7,7 @@
 - No Easy Rollback - Without automation, reverting a broken deployment is slow and risky
 
 ### Task 2: GitHub Actions Exploration in a Public Repo
-## I explored ci.yml workflow in https://github.com/clouddrove/github-shared-workflows.git
+#### I explored ci.yml workflow in https://github.com/clouddrove/github-shared-workflows.git
 1. What triggered the workflow?
 - Push to main or master
 - Pull request targeting main or master
