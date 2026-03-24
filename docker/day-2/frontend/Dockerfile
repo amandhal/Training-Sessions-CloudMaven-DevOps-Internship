@@ -1,4 +1,6 @@
 FROM node:20-alpine AS builder
+ARG ENV  
+RUN echo "Building for $ENV"
 WORKDIR /app
 COPY package*.json ./
 RUN npm ci
