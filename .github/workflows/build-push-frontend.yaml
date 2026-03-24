@@ -34,7 +34,7 @@ jobs:
 
       - name: Build & Push Frontend Image to GHCR
         run: |
-          docker build -t $REGISTRY/${{ github.repository_owner }}/$REPOSITORY:$IMAGE_TAG ./docker/day-2/frontend
+          docker build --build-arg ENV=dev -t $REGISTRY/${{ github.repository_owner }}/$REPOSITORY:$IMAGE_TAG ./docker/day-2/frontend
           docker push $REGISTRY/${{ github.repository_owner }}/$REPOSITORY:$IMAGE_TAG
 
       - name: Remove Local Image
