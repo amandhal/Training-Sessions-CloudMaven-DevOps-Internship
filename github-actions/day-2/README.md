@@ -48,4 +48,51 @@ jobs:
 ```
 <img width="1917" height="444" alt="image" src="https://github.com/user-attachments/assets/cd00e427-b9ff-4c0a-9fb3-065134aa6d4a" />
 
-### 
+### Task 5 : Docker Build & Push
+```yaml
+name: Build and Push Frontend Image
+
+on:
+  push:
+    branches:
+      - day2-day3-gh-actions-tasks
+    paths:
+      - "docker/day-2/frontend/**"
+      - ".github/workflows/build-push-frontend.yaml"
+
+env:
+  REGISTRY: ghcr.io               
+  REPOSITORY: frontend      
+  IMAGE_TAG: ${{ github.sha }}   
+
+jobs:
+  build-push-frontend:
+    runs-on: ubuntu-latest
+
+    permissions:
+      contents: read
+      packages: write
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v6
+
+      - name: Log in to GitHub Container Registry
+        uses: docker/login-action@v4
+        with:
+          registry: ghcr.io
+          username: ${{ github.actor }}
+          password: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Build & Push Frontend Image to GHCR
+        run: |
+          docker build --build-arg ENV=dev -t $REGISTRY/${{ github.repository_owner }}/$REPOSITORY:$IMAGE_TAG ./docker/day-2/frontend
+          docker push $REGISTRY/${{ github.repository_owner }}/$REPOSITORY:$IMAGE_TAG
+
+      - name: Remove Local Image
+        run: |
+          docker rmi $REGISTRY/${{ github.repository_owner }}/$REPOSITORY:$IMAGE_TAG
+```
+<img width="1919" height="602" alt="image" src="https://github.com/user-attachments/assets/aa523860-5cb4-4ce4-91da-f2fd561e657f" />
+<img width="1286" height="420" alt="image" src="https://github.com/user-attachments/assets/e85f7a18-e03a-4c52-ab24-94322a93010c" />
+
