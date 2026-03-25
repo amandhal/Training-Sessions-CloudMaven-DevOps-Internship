@@ -6,7 +6,8 @@ on:
     branches:
       - main
     paths:
-      - ".github/workflows/call-shared-workflow.yml"
+      - "docker/day-2/frontend/**"
+      - ".github/workflows/build-push-frontend-using-shared-workflow.yml"
 
 jobs:
   build-push-frontend:
