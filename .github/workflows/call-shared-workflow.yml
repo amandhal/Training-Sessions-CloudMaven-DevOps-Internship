@@ -19,5 +19,5 @@ jobs:
     with:
       BUILD_PATH: ./docker/day-2/frontend
       provider: DOCKERHUB
-      images: frontend
+      images: amandhal/frontend
       IMAGE_TAG: ${{ github.run_id }}
