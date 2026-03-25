@@ -17,6 +17,8 @@ jobs:
         run: echo "Running Shared CI Quality Check"
 ```
 
+---
+
 ### Task 2: Called Shared Workflow from Another Repository and Verified workflow run.
 ```yaml
 name: use-shared-ci
@@ -28,6 +30,8 @@ jobs:
     uses: amandhal/shared-workflows/.github/workflows/shared-ci.yml@main
 ```
 <img width="1919" height="749" alt="image" src="https://github.com/user-attachments/assets/c6cd09eb-897e-4c68-aafd-8471b24d0167" />
+
+---
 
 ### Task 3: Modified Shared Workflow & Observed Impact
 ```yaml
