@@ -1,0 +1,23 @@
+
+name: Build and Push Frontend Image using clouddrove shared workflow
+
+on:
+  push:
+    branches:
+      - build-push-shared-workflow
+    paths:
+      - ".github/workflows/call-shared-workflow.yml"
+
+jobs:
+  build-push-frontend:
+    uses: clouddrove/github-shared-workflows/.github/workflows/docker-build-push.yml@master
+    
+    secrets:
+      DOCKERHUB_USERNAME: ${{ secrets.DOCKERHUB_USERNAME }}
+      DOCKERHUB_PASSWORD: ${{ secrets.DOCKERHUB_PASSWORD }}
+      
+    with:
+      BUILD_PATH: ./docker/day-2/frontend
+      provider: DOCKERHUB
+      images: frontend
+      IMAGE_TAG: ${{ github.run_id }}
