@@ -110,15 +110,13 @@ A trace is made up of multiple **spans**, where each span represents one unit of
 | Feature | **Dynatrace (Paid)** | **Jaeger (Free)** |
 |---|---|---|
 | Type | SaaS, fully managed | Self-hosted, open-source |
-| Auto-instrumentation | Yes, automatic (OneAgent) | Manual SDK instrumentation |
+| Auto-instrumentation | Yes, automatic | Manual SDK instrumentation |
 | AI Root Cause Analysis | Yes (Davis AI) | No |
-| Service Topology Map | Auto-generated | Basic dependency graph |
 | Setup Complexity | Low | High |
 
 ##### ✅ Advantage of Dynatrace over Jaeger
-- **Zero-code auto-instrumentation** via the OneAgent — Dynatrace automatically instruments your application without code changes. Jaeger requires you to manually add SDK calls throughout your codebase.
-- **Davis AI for root cause analysis** — Dynatrace's AI engine automatically pinpoints the root cause of a problem across traces, logs, and metrics together. Jaeger only shows you trace data; you must manually analyze it.
-- **Automatic service topology mapping** — Dynatrace generates a real-time map of all your services and their dependencies automatically. Jaeger shows basic trace graphs but does not generate a living dependency map.
+- **Zero-code auto-instrumentation** — Dynatrace automatically instruments your application without code changes. Jaeger requires you to manually add SDK calls throughout your codebase.
+- **AI for root cause analysis** — Dynatrace's AI engine automatically pinpoints the root cause of a problem across traces, logs, and metrics together. Jaeger only shows you trace data; you must manually analyze it.
 - **Full-stack correlation** — Dynatrace links a slow trace all the way down to the underlying host CPU spike, database query, and log error automatically.
 
 ---
