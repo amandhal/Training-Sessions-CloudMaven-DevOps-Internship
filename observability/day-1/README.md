@@ -41,13 +41,10 @@ Think of them as your application's diary — every event, error, warning, or ac
 | Setup | Minutes | Hours to days |
 | Scalability | Auto-scales | Manual scaling required |
 | Alerting | Built-in, smart alerts | Manual configuration |
-| Cost | Paid per GB ingested | Free (but infra cost) |
 
 ##### ✅ Advantage of Datadog over ELK Stack
 - **Zero infrastructure management** — no need to manage Elasticsearch nodes, Logstash pipelines, or Kibana servers.
-- **Automatic log parsing and pattern detection** using ML — ELK requires manual Grok parsers.
 - **Unified platform** — logs, metrics, and traces are correlated in one place natively, whereas ELK needs extra plugins (like APM) to achieve this.
-- **Built-in anomaly detection** — ELK requires manual threshold tuning.
 
 ---
 
@@ -67,7 +64,7 @@ They are aggregated data points (unlike logs which are individual events).
 - Track system health at a glance
 - Trigger alerts when thresholds are breached
 - Capacity planning and trend analysis
-- SLA/SLO monitoring (e.g., uptime > 99.9%)
+- SLA monitoring (e.g., uptime > 99.9%)
 
 ---
 
