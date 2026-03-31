@@ -134,8 +134,8 @@ The real power of observability comes when all three pillars are **correlated**:
 ```mermaid
 flowchart TD
     A["🧑 User: Checkout is slow"] --> B["📈 Metrics: p99 latency spike at 11:02 AM"]
-    B --> C["🔍 Traces: Payment Service span took 2.3s"]
-    C --> D["📋 Logs: ERROR — Payment gateway timeout 2000ms"]
+    B --> C["📋 Logs: ERROR — Payment gateway timeout 2000ms"]
+    C --> D["🔍 Traces: Payment Service span took 2.3s"]
     D --> E["✅ Root Cause Found!"]
 ```
 
@@ -151,9 +151,8 @@ Without all three pillars together, you'd only see part of the picture.
 | Metrics | How is the system?   | Prometheus    | New Relic   |
 | Traces  | Where is it slow?    | Jaeger        | Dynatrace   |
 
----
-
-## 📚 Further Reading
-- [OpenTelemetry](https://opentelemetry.io/) — Open standard for collecting all three pillars
-- [CNCF Observability Landscape](https://landscape.cncf.io/card-mode?category=observability-and-analysis)
-- [Google SRE Book — Monitoring](https://sre.google/sre-book/monitoring-distributed-systems/)
+| Pillar  | Answers              | Free Tool     | Paid Tool   |
+|---------|----------------------|---------------|-------------|
+| Logs    | Why is it happening? | ELK Stack     | Datadog     |
+| Metrics | What's happening?    | Prometheus    | New Relic   |
+| Traces  | Where's it happening?| Jaeger        | Dynatrace   |
