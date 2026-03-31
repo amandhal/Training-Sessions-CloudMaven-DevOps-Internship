@@ -74,9 +74,8 @@ They are aggregated data points (unlike logs which are individual events).
 |---|---|---|
 | Type | SaaS, fully managed | Self-hosted, open-source |
 | Data Retention | Long-term, configurable | Default 15 days (local) |
-| Dashboards | Built-in, drag-and-drop | Requires Grafana setup |
+| Dashboards | Built-in | Requires Grafana setup |
 | Alerting | Smart, ML-based | Basic threshold alerts |
-| Cardinality Handling | Excellent | Struggles at very high cardinality |
 
 ##### ✅ Advantage of New Relic over Prometheus
 - **Long-term data retention** out of the box — Prometheus stores data locally with a default 15-day limit; extending it requires extra infrastructure like Thanos or Cortex.
