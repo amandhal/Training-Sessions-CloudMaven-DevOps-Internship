@@ -3,10 +3,10 @@
 ## What is Observability?
 
 Observability is the ability to understand the **internal state of a system** by examining its external outputs.
-In software and infrastructure, it means you can answer the question:
+It means we can answer the question:
 > *"Why is my system behaving this way?"* — just by looking at the data it produces.
 
-It goes beyond simple monitoring (which tells you *what* is broken) by helping you understand *why* something broke, even if you've never seen that failure before.
+It goes beyond simple monitoring (which tells us *what* is broken) by helping us understand *why* something broke, even if we've never seen that failure before.
 
 ---
 
@@ -133,17 +133,11 @@ flowchart TD
     D --> E["✅ Root Cause Found!"]
 ```
 
-Without all three pillars together, you'd only see part of the picture.
+Without all three pillars together, we'd only see part of the picture.
 
 ---
 
 ## 📊 Quick Reference Summary
-
-| Pillar  | Answers              | Free Tool     | Paid Tool   |
-|---------|----------------------|---------------|-------------|
-| Logs    | What happened?       | ELK Stack     | Datadog     |
-| Metrics | How is the system?   | Prometheus    | New Relic   |
-| Traces  | Where is it slow?    | Jaeger        | Dynatrace   |
 
 | Pillar  | Answers              | Free Tool     | Paid Tool   |
 |---------|----------------------|---------------|-------------|
