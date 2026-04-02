@@ -1,18 +1,17 @@
 volumes:
   mongo-data:
+  grafana-data:
 
 services:
-  backend:
-    build: ./backend
-    container_name: backend
+  grafana:
+    image: grafana/grafana
+    container_name: grafana
+    ports:
+      - "3000:3000"
+    volumes:
+      - grafana-data:/var/lib/grafana
     depends_on:
-      - mongo
-
-  frontend:
-    build: ./frontend
-    container_name: frontend
-    depends_on:
-      - backend
+      - prometheus
 
   prometheus:
     image: prom/prometheus
@@ -38,34 +37,16 @@ services:
     ports:
       - "9100:9100"
 
-  mongo:
-    image: mongo
-    container_name: mongo
-    volumes:
-      - mongo-data:/data/db
-    ports:
-      - "27017:27017"
-
   mongodb-exporter:
-    image: percona/mongodb_exporter:0.49.0
+    image: percona/mongodb_exporter:0.49
     container_name: mongodb-exporter
-    environment:
-      - MONGODB_URI=mongodb://mongo:27017
+    command:
+    - --mongodb.uri=mongodb://mongo:27017/mean_db
+    - --collect-all
     ports:
       - "9216:9216"
     depends_on:
       - mongo
-
-  nginx:
-    image: nginx:alpine
-    container_name: nginx
-    volumes:
-      - ./nginx-reverse-proxy/default.conf:/etc/nginx/conf.d/default.conf
-    ports:
-      - "8080:80"
-    depends_on:
-      - frontend
-      - backend
 
 
   nginx-exporter:
@@ -77,3 +58,34 @@ services:
       - "9113:9113"
     depends_on:
       - nginx
+
+  nginx:
+    image: nginx
+    container_name: nginx
+    volumes:
+      - ./nginx-reverse-proxy/default.conf:/etc/nginx/conf.d/default.conf
+    ports:
+      - "8080:80"
+    depends_on:
+      - frontend
+      - backend
+      
+  mongo:
+    image: mongo
+    container_name: mongo
+    volumes:
+      - mongo-data:/data/db
+    ports:
+      - "27017:27017"
+      
+  backend:
+    build: ./backend
+    container_name: backend
+    depends_on:
+      - mongo
+
+  frontend:
+    build: ./frontend
+    container_name: frontend
+    depends_on:
+      - backend

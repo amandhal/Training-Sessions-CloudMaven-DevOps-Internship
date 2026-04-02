@@ -1,0 +1,9 @@
+route:
+  receiver: "slack"
+
+receivers:
+  - name: "slack"
+    slack_configs:
+      - api_url: "slack" 
+        channel: "#aman-dhal-prometheus-alerts"
+        send_resolved: true
