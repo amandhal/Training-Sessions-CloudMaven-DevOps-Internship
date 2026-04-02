@@ -1,0 +1,18 @@
+groups:
+  - name: demo-alerts
+    rules:
+      - alert: NginxDown
+        expr: up{job="nginx"} == 0
+        for: 5s
+        labels:
+          severity: critical
+        annotations:
+          summary: "NGINX is down"
+
+      - alert: MongoDown
+        expr: up{job="mongodb"} == 0
+        for: 5s
+        labels:
+          severity: critical
+        annotations:
+          summary: "MongoDB exporter down"
