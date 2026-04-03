@@ -30,10 +30,14 @@
 - Application metrics, on the other hand, focus on how the app behaves—like by checking request count, latency, error rates, and throughput.
 - In short: infrastructure tells us if the system is healthy, application metrics tell you if the app is working correctly for users.
 
+---
+
 2. Why counters require rate() / increase() functions
 - Counters in Prometheus only increase over time (they never decrease unless reset). Because of this, their raw value isn’t very useful for real-time insights.
 - Functions like rate() or increase() calculate how fast the counter is growing over a time window.
 - This helps us understand meaningful traffic trends like requests per second instead of just total requests since startup.
+
+---
 
 3. How monitoring helps in troubleshooting
 - Monitoring helps detect problems early by continuously tracking system and application behavior.
