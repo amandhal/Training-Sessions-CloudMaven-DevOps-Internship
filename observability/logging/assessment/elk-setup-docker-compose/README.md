@@ -17,6 +17,9 @@ docker compose ps -a
 ---
 
 - This Application generates ERROR logs on accessing http://localhost:8081/api/v1/customers?customerId= if wrong customer Id is provided
+<img width="995" height="179" alt="image" src="https://github.com/user-attachments/assets/7553b9e7-27e7-49d3-9055-17f6696076d5" />
+
+---
 
 ### Kibana Access & Exploration
 <img width="1919" height="823" alt="image" src="https://github.com/user-attachments/assets/d70e85df-64a0-4e8a-b3d4-7b6b72d24a5d" />
