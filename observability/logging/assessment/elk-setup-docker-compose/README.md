@@ -12,6 +12,7 @@ docker compose ps -a
 ### Log Generation
 - This Application generates INFO logs on accessing http://localhost:8081/api/v1/customers/all and http://localhost:8081/api/v1/customers?customerId= if correct customer Id is provided
 <img width="606" height="462" alt="image" src="https://github.com/user-attachments/assets/fcc43e81-0a77-418f-b3a8-b68da1814ec6" />
+<img width="957" height="304" alt="image" src="https://github.com/user-attachments/assets/382962f0-baae-4331-8bd1-1c4c0a16c3a5" />
 
 ---
 
