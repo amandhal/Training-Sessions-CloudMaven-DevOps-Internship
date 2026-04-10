@@ -22,6 +22,12 @@ docker compose ps -a
 ---
 
 ### Kibana Access & Exploration
+- Kibana Discover
+<img width="1919" height="827" alt="image" src="https://github.com/user-attachments/assets/ad55d3fc-6b1f-4b19-8223-1bb8540fea2b" />
+
+---
+
+- Appled filter to see error/high_severity logs
 <img width="1919" height="823" alt="image" src="https://github.com/user-attachments/assets/d70e85df-64a0-4e8a-b3d4-7b6b72d24a5d" />
 
 ---
