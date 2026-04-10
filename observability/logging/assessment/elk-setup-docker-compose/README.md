@@ -12,6 +12,8 @@ docker compose ps -a
 ### Kibana Access & Exploration
 <img width="1919" height="823" alt="image" src="https://github.com/user-attachments/assets/d70e85df-64a0-4e8a-b3d4-7b6b72d24a5d" />
 
-## Kibana Dashboard
+---
+
+### Kibana Dashboard
 <img width="1919" height="650" alt="image" src="https://github.com/user-attachments/assets/9de75df1-03be-45fc-8a19-0ca5b1272de9" />
 
