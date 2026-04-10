@@ -32,6 +32,6 @@ docker compose ps -a
 
 ---
 
-### Created Kibana Dashboard
+### Created a Kibana Dashboard with 3 panels to see Error count, Logs over time & Log distribution
 <img width="1919" height="650" alt="image" src="https://github.com/user-attachments/assets/9de75df1-03be-45fc-8a19-0ca5b1272de9" />
 
