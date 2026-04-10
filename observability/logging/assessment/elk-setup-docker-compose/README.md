@@ -10,9 +10,9 @@ docker compose ps -a
 ---
 
 ### Log Generation
-- This Application generates INFO logs on accessing http://app-url:8081/api/v1/customers/all and http://app-url:8081/api/v1/customers?customerId= if correct customer Id is provided
+- This Application generates INFO logs on accessing http://localhost:8081/api/v1/customers/all and http://localhost:8081/api/v1/customers?customerId= if correct customer Id is provided
 
-- This Application generates ERROR logs on accessing http://app-url:8081/api/v1/customers?customerId= if wrong customer Id is provided
+- This Application generates ERROR logs on accessing http://localhost:8081/api/v1/customers?customerId= if wrong customer Id is provided
 
 ### Kibana Access & Exploration
 <img width="1919" height="823" alt="image" src="https://github.com/user-attachments/assets/d70e85df-64a0-4e8a-b3d4-7b6b72d24a5d" />
