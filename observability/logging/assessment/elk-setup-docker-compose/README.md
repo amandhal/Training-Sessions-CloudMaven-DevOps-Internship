@@ -27,7 +27,7 @@ docker compose ps -a
 
 ---
 
-- Appled filter to see error/high_severity logs
+- Applied filter to see error/high_severity logs
 <img width="1919" height="823" alt="image" src="https://github.com/user-attachments/assets/d70e85df-64a0-4e8a-b3d4-7b6b72d24a5d" />
 
 ---
