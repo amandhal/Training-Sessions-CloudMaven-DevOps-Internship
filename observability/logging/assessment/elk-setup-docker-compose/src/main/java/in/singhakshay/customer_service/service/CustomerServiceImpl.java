@@ -31,8 +31,8 @@ public class CustomerServiceImpl implements CustomerService {
     log.info("START - getCustomerById, id: {}", id);
 
     var customer = customerRepository.findById(id).orElseThrow(() -> {
-      log.error("Customer not found, id: {}", id);
-      return new RuntimeException("Customer not found");
+      log.error("ERROR - Customer not found, id: {}", id);
+      return new RuntimeException("ERROR - Customer not found");
     });
 
     log.info("END - getCustomerById");
