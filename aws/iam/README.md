@@ -117,6 +117,8 @@ aws s3 rb s3://s3-cloudmaven
 ```
 <img width="1639" height="628" alt="image" src="https://github.com/user-attachments/assets/84cbef4c-9f74-450f-8d85-b9fe6bee89ed" />
 
+---
+
 - Step 3: Created an IAM permission policy allowing creation and listing of s3 buckets and attached the policy to IAM-ROLE-2
 ```json
 
