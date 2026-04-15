@@ -20,7 +20,7 @@ aws iam create-user --user-name create-s3-user
 ---
 
 - Step 4: Created access keys for create-s3-user and configured a profile using them
-<img width="1585" height="473" alt="image" src="https://github.com/user-attachments/assets/0f4338f5-3891-47a4-9cf4-1b22f31a3054" />
+<img width="1919" height="370" alt="image" src="https://github.com/user-attachments/assets/802a7b63-5b48-4a99-8c54-4ad8b5750b65" />
 
 ---
 
