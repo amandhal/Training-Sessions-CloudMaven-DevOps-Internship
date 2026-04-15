@@ -78,4 +78,72 @@ aws s3 rb s3://s3-cloudmaven
 ```
 <img width="1801" height="303" alt="image" src="https://github.com/user-attachments/assets/05d363c9-86cd-4ba1-9260-10ad1d0fca10" />
 
+---
+
+### Task 3:
+- Step 1: Created IAM-ROLE-1 with trust policy to assumed by an IAM user with no permission policy at all
+```json
+{
+	"Version": "2012-10-17",
+	"Statement": [
+		{
+			"Effect": "Allow",
+			"Principal": {
+				"AWS": "arn:aws:iam::185137893823:user/create-s3-user"
+			},
+			"Action": "sts:AssumeRole"
+		}
+	]
+}
+```
+<img width="1611" height="628" alt="image" src="https://github.com/user-attachments/assets/2ff5b7f4-0e05-4954-9380-6b93778f0886" />
+
+---
+
+- Step 2: Created IAM-ROLE-2 with trust policy to assumed by IAM-ROLE-1
+```json
+{
+	"Version": "2012-10-17",
+	"Statement": [
+		{
+			"Effect": "Allow",
+			"Principal": {
+				"AWS": "arn:aws:iam::185137893823:role/IAM-ROLE-1"
+			},
+			"Action": "sts:AssumeRole"
+		}
+	]
+}
+```
+<img width="1639" height="628" alt="image" src="https://github.com/user-attachments/assets/84cbef4c-9f74-450f-8d85-b9fe6bee89ed" />
+
+- Step 3: Created an IAM permission policy allowing creation and listing of s3 buckets and attached the policy to IAM-ROLE-2
+```json
+
+	"Version": "2012-10-17",
+	"Statement": [
+		{
+			"Effect": "Allow",
+			"Action": [
+				"s3:CreateBucket",
+				"s3:ListAllMyBuckets"
+			],
+			"Resource": "arn:aws:s3:::*"
+		}
+	]
+}
+```
+<img width="1619" height="416" alt="image" src="https://github.com/user-attachments/assets/f8e7d64a-3b7b-48cf-8e56-3f24e2541179" />
+<img width="1723" height="299" alt="image" src="https://github.com/user-attachments/assets/d2d3753a-3e08-4e11-bf76-3cd8965e3c6f" />
+
+---
+
+- Step 4: Assumed IAM-ROLE-1 using create-s3-user and tried to create s3 bucket but it failed as IAM-ROLE-1 does not have required permission
+<img width="1853" height="500" alt="image" src="https://github.com/user-attachments/assets/ce4b5a15-fb5c-4871-83db-04af5aab2b40" />
+
+---
+
+- Step 5: Assumend IAM-ROLE-2 using IAM-ROLE-1 and tried to create and list bucked anit worked as IAM-ROLE-2 had necessary permissions in the policy
+<img width="1856" height="413" alt="image" src="https://github.com/user-attachments/assets/d517c4fc-b8bd-4a9e-b10a-9cb67c2aa199" />
+
 
