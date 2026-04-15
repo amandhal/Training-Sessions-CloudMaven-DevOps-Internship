@@ -121,7 +121,7 @@ aws s3 rb s3://s3-cloudmaven
 
 - Step 3: Created an IAM permission policy allowing creation and listing of s3 buckets and attached the policy to IAM-ROLE-2
 ```json
-
+{
 	"Version": "2012-10-17",
 	"Statement": [
 		{
