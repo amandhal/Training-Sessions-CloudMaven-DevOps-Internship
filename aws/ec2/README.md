@@ -76,6 +76,8 @@ systemctl enable nginx
 <img width="1571" height="275" alt="image" src="https://github.com/user-attachments/assets/0c2e26b0-5678-48e4-bbfb-c24c76dd8646" />
 <img width="1919" height="445" alt="image" src="https://github.com/user-attachments/assets/c0bd0eb4-7007-4e1b-a29c-446f617bdce6" />
 
+---
+
 - Step 3: Added this script in user data section of 1st instance
 ```bash
 #!/bin/bash
@@ -86,6 +88,35 @@ sudo docker run -d --name apache -p 8080:80 httpd
 sudo docker run -d --name nginx -p 80:80 nginx
 ```
 
-- Step 4: Added an inbound rule in the security group to allow external access to nginx and apache docker container on port 80 and 8080 respectively
+---
 
+- Step 4: Added an inbound rule in the security group to allow external access to nginx and apache docker container on port 80 and 8080 respectively
+<img width="1630" height="140" alt="image" src="https://github.com/user-attachments/assets/830164d2-3abb-465e-87bd-3e0970f0a64b" />
+
+---
+
+- Step 5: Tested access to both apache and nginx container
+<img width="774" height="196" alt="image" src="https://github.com/user-attachments/assets/fe031752-17a3-4149-8a6b-e700d6113e4b" />
+<img width="1420" height="552" alt="image" src="https://github.com/user-attachments/assets/52a7ecac-faf9-43e8-a1bd-8d05454ab02b" />
+
+---
+
+### Task 4: Accessed a private ec2 instance using bastion host
+- Step 1: Created a private subnet attached to a private route table
+<img width="1636" height="485" alt="image" src="https://github.com/user-attachments/assets/1f49eece-c85b-4b86-9a4f-e827bcaddf18" />
+
+---
+
+- Step 2: Launched an ec2 instance in the private subnet
+<img width="1643" height="395" alt="image" src="https://github.com/user-attachments/assets/2ceab5ff-0a21-4228-9e56-993e4b61e7ad" />
+
+---
+
+- Step 3: Tried to access it from my local machine but failed as it only have private ip and my local machine is not in the same vpc
+<img width="994" height="98" alt="image" src="https://github.com/user-attachments/assets/5bb3d435-a2bb-4a6e-920e-40b3b39c6e0d" />
+
+---
+
+- Step 4: Tried to access from another ec2 in the same vpc and it worked
+<img width="865" height="824" alt="image" src="https://github.com/user-attachments/assets/8e1c2e12-433b-434c-85a9-7145d1afa1c8" />
 
