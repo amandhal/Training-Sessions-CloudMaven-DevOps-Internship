@@ -82,8 +82,8 @@ systemctl enable nginx
 sudo apt update
 sudo apt install docker.io -y
 
-docker run -d -p 8080:80 --name apache httpd
-docker run -d -p 80:80 --name nginx nginx
+sudo docker run -d --name apache -p 8080:80 httpd
+sudo docker run -d --name nginx -p 80:80 nginx
 ```
 
 - Step 4: Added an inbound rule in the security group to allow external access to nginx and apache docker container on port 80 and 8080 respectively
