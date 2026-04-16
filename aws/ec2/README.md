@@ -120,3 +120,16 @@ sudo docker run -d --name nginx -p 80:80 nginx
 - Step 4: Tried to access from another ec2 in the same vpc and it worked
 <img width="865" height="824" alt="image" src="https://github.com/user-attachments/assets/8e1c2e12-433b-434c-85a9-7145d1afa1c8" />
 
+- Network Flow Diagram
+
+```text
+My Laptop
+   |
+   | SSH using Public IP
+   v
+[Bastion Host / Jump Server] in Public Subnet
+   |
+   | SSH using Private IP
+   v
+[Private EC2 Instance] in Private Subnet
+```
