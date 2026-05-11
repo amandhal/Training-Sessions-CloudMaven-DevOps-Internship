@@ -30,8 +30,8 @@
 ---
 
 ## tf refresh vs tf plan
-- tf refresh just update the terraform state if any modifications are made in the infrastructure manually
-- tf plan first refreshed the state then compare it with desired state and decide what needs to be added, deleted or changed
+- tf refresh just updates the terraform state if any modifications are made in the infrastructure outside of terraform
+- tf plan first refreshes the state then compare it with desired state and decide what needs to be added, deleted or changed
 
 ---
 
