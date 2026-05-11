@@ -1,6 +1,6 @@
 # Day 1 - Hands-On tasks
 
-## Install Terraform & Set up an alias
+## Installed Terraform & Set up an alias
 <img width="1170" height="248" alt="image" src="https://github.com/user-attachments/assets/1c9d0d90-35df-4cca-bd2d-ae842ecb917f" />
 
 ---
